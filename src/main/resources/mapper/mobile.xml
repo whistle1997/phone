@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wsl.dao.MobileDao">
+   
+    <select id="getOneByMobileNumber" parameterType="java.lang.String" resultType="com.wsl.bean.Mobile">
+    	SELECT * FROM mobile WHERE MobileNumber=#{num}
+    </select>
+</mapper>
